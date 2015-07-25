@@ -1,0 +1,55 @@
+/* ** Layout ** */
+body {
+	margin: 0;
+}
+
+body > div {
+	background-color: #cccccc;
+	display: flex;
+	flex-direction: column;
+}
+
+header, footer {
+	background-color: #aaaaaa;
+	height: 100px;
+}
+
+#content {
+	display: flex;
+	background-color: #ddddff;
+	justify-content: space-between;
+	height: calc(100vh - 200px );
+}
+
+#content .column.left,
+#content .column.right {
+	background: #ccccee;
+	width: 200px;
+}
+#content .column.center{
+	background-color: #ffffff;
+	width: auto;
+	flex-grow: 1;
+}
+
+.column {
+	background-color: #eeeeee;
+}
+
+/* ** content ** */
+#blocksContainer {
+	background-color: #ccffcc;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.block{
+	background-color: #aaffaa;
+	padding: 10px;
+	max-width: 300px;
+	min-width: 250px;
+	flex-grow: 3;
+}
